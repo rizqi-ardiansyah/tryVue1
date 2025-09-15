@@ -7,7 +7,6 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-
     vue(),
     vueDevTools(),
   ],
@@ -20,9 +19,6 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5000,
     strictPort: true,
-    allowedHosts: [
-      // tambahkan host replit kamu di sini
-      "4b3e1a83-09b6-4cce-92e3-d2c8fed403ee-00-f5mtnnvi98hh.spock.replit.dev"
-    ]
+    allowedHosts: true
   }
 })
