@@ -15,9 +15,9 @@ const toggleSidebar = () => {
     <div class="bg-gray-900 text-white w-64 min-h-screen p-4 space-y-6" :class="{ 'hidden': !sidebarOpen, 'block': sidebarOpen, 'md:block': true }">
       <div class="flex items-center space-x-2">
         <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-          <span class="text-white font-bold text-lg">D</span>
+          <span class="text-white font-bold text-lg"></span>
         </div>
-        <h1 class="text-xl font-bold">Dashboard</h1>
+        <h1 class="text-xl font-bold">Tes Dashboard</h1>
       </div>
 
       <nav class="space-y-2">
