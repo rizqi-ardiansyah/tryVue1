@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import RevenueChart from '../components/RevenueChart.vue'
+import UserChart from '../components/UserChart.vue'
 
 // Sample dashboard data
 const dashboardStats = ref([
@@ -76,15 +78,10 @@ const recentActivity = ref([
 
     <!-- Charts and Activity Section -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <!-- Chart Placeholder -->
+      <!-- Revenue Chart -->
       <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <h3 class="text-lg font-semibold text-gray-900 mb-4">Revenue Chart</h3>
-        <div class="h-64 bg-gray-50 rounded-lg flex items-center justify-center">
-          <div class="text-center">
-            <div class="text-4xl mb-2">📊</div>
-            <p class="text-gray-500">Chart will be displayed here</p>
-          </div>
-        </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Revenue & Profit Trends</h3>
+        <RevenueChart />
       </div>
 
       <!-- Recent Activity -->
@@ -104,6 +101,12 @@ const recentActivity = ref([
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- User Growth Chart -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
+      <h3 class="text-lg font-semibold text-gray-900 mb-4">Monthly User Growth</h3>
+      <UserChart />
     </div>
 
     <!-- Additional Info Cards -->
